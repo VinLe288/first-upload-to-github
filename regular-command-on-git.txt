@@ -14,3 +14,11 @@ git checkout <branch-name> //to switch to other branch (or git switch)
 git checkout <branch-name>^ //to move HEAD to parent verson of branch
 directly reassign a branch to a commit with the -f option. So something like: git branch -f main HEAD~3 (just allow to use when you are on another branch)
 git clone <url> //to clone a remote repository to your local repository
+git reset //to reverse HEAD backwards to an older commit on your local git repository
+git revert //to reverse HEAD backwards to an older commit on your remote git repository
+git cherry-pick <commit 1> <commit 2>... //to pick commits on branches that you want and create a new commits on your main branch
+git rebase -i <commit star> <commit end> //to rearrange commits on the branch
+git tag <tag-name> <commit-name> //to assign a tag name to a commit
+git describe <ref> //to describe where you are relative to the closest "anchor" (aka tag)
+git rebase <parent-commit> <commit-that-you-want-to-rebase-next-to-parent-commit> //create a new commit that on other branch next to a commit on another branch
+git checkout <commit-name>^<interger-number> //switch to which parent reference to follow from a merge commit
