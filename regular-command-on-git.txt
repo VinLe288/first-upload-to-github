@@ -7,7 +7,10 @@ git remote add <name> (usually orgigin) <url> //make connection to remote git re
 git push -u orgigin main //push local git repository to remote git repository
 touch .gitignore //create list of ignore from upload to remote git repository
 git rm --cached -r . //remove all files from staging area
-git brach <branch-name> //to create a new branch
+git brach <branch-name> //to create a new branch (or git checkout -b <branch-name>)
 git merge <branch-name> //to merge a branch to main branch => :q! //to leave empty note for your branch merge to main
 git branch //to check branches that we have
-git checkout <branch-name> //to switch to other branch
+git checkout <branch-name> //to switch to other branch (or git switch)
+git checkout <branch-name>^ //to move HEAD to parent verson of branch
+directly reassign a branch to a commit with the -f option. So something like: git branch -f main HEAD~3 (just allow to use when you are on another branch)
+git clone <url> //to clone a remote repository to your local repository
